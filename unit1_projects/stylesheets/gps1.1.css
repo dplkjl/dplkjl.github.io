@@ -1,0 +1,28 @@
+
+header {
+	padding: 12px;
+	border:ridge;
+	    font-family: "San-serif";
+	}
+.blog-text{
+    margin-top:20px;
+    margin-bottom:50px;
+    padding: 12px;
+    margin-left:10%;
+    width:50%;
+    border:dashed;
+}
+.sidebar{
+    padding: 12px;
+    margin-top:12px;
+    margin-right:5%;
+    border:ridge;
+    float:right; 
+    width:20%;
+}
+footer{
+    padding: 12px;
+    width:100%;
+    border:ridge;
+    float:left;
+}

@@ -1,0 +1,92 @@
+code {
+  background: grey;
+  border-radius: 6px;
+  color: #fff;
+  display: block;
+  font: 14px/24px "PT Sans", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  padding: 24px 15px;
+  text-align: left;
+  width:100%
+}
+.default {
+  background: none;
+  color: #666;
+  text-align: Left;
+  font: 24px "PT Sans", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  font-weight: 300;
+
+}
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  background: #eaeaed;
+  border-radius: 6px;
+  clear: both;
+  *zoom: 1;
+  border:3px solid;
+  border-color: grey;
+}
+header{
+ background: grey;
+ }
+header #kimage{
+  border-width:2px;
+  margin:none;
+  background:grey;
+  position:6px;
+  float:left;
+  width:20%
+}
+
+header h1{
+  padding-top:24px;
+  padding-bottom:47px;
+  background:grey;
+  font-size:2em;
+  float:right;
+  width:80%
+  }
+section,
+aside,
+footer {
+  margin: 0 1.5% 24px 1.5%;
+}
+section {
+  float: left;
+  width: 63%;
+}
+aside {
+  float: right;
+  width: 30%;
+}
+footer {
+  margin-bottom: 0;
+}
+h1{
+  background: #009b9b;
+  border-width: 6px;
+  color: #fff;
+  display: block;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 300;
+  text-align: left;
+}
+h2, h3, h4 {
+  background: #009b9b;
+  border-radius: 6px;
+  color: #fff;
+  display: block;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 300;
+  padding: 24px 15px;
+  text-align: left;
+}
+.section1 ul{
+font-size:14px;
+}
