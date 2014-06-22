@@ -3,7 +3,7 @@ code {
   border-radius: 6px;
   color: #fff;
   display: block;
-  font: 14px/24px "PT Sans", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  font: 14px/24px "Lato", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
   padding: 24px 15px;
   text-align: left;
   width:100%
@@ -12,7 +12,7 @@ code {
   background: none;
   color: #666;
   text-align: Left;
-  font: 24px "PT Sans", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  font: 24px "Lato", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
   font-weight: 300;
 
 }
@@ -73,7 +73,7 @@ h1{
   border-width: 6px;
   color: #fff;
   display: block;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
   text-align: left;
 }
@@ -82,7 +82,7 @@ h2, h3, h4 {
   border-radius: 6px;
   color: #fff;
   display: block;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
   padding: 24px 15px;
   text-align: left;
