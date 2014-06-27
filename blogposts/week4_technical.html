@@ -1,67 +1,97 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+<html>
+
 <head>
-	<html lang="en">
-	<link href="stylesheets/blog.css" rel="stylesheet">
-	<meta charset="utf-8"><header>
-    <title>W4 Tech Blog</title>  <!-- tab label-->
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<meta name="description" content="description"/>
+<meta name="keywords" content="keywords"/> 
+<meta name="author" content="author"/> 
+<link rel="stylesheet" type="text/css" href="stylesheets/blog.css" media="screen"/>
+<title>Web Site Design</title>
 </head>
-<header>
-  <!--<code>&#60;header&#62;</code> -->
-  <h1>Technical Blog</h1>
-</header>
 
-<div class="group">
+<body>
 
-  <code class="default"><strong>C# Blog Entries </strong></code>
-  
-  <section>
+<div class="container">
 
-    <code>  
-    <h1>Saturday 28 June 2014
-    <br>
-    <strong>Looping!</strong></h1>
-    <h2> Why Loop?</h2>
-    <p>A loop is a fundamental way to repeat the execution of certain pieces of code in your programme. You wouldn't want to have to write the same piece of code over and over just to collect multiple
-    bits of information from the user, or to display something that has lots of values.  Instead you write one piece of code and loop through it a certain number of times.</p>
-    <h2>What are the choices?</h2>
-    <p>There are four loop constructs in c#.  They are the 'while', 'do', 'for' and 'foreach' loop constructs:</p>
-    <h3>while Loops </h3>
-    <p>This loop construct continues executing an embedded statement as long as a certain condition holds true. It's syntax is:</p>
-    <code class="p1">while <em> (condition)</em></code>
-    <code class="p2">       embedded-statement </code>
-    <p>The while statement evaluates it's condition before entering the loop body on every iteration.</p> 
-    <h3>do...while Loops</h3>
-    <p>The 'do' loop is similar to the above 'while' loop except that the expression is evaluated after the body of the loop has completed. By implication this means that it will always run at least once. It's syntax is:</p>
-    <code class="p1">do</code>
-    <code class="p2">      embedded-statement<br></code>
-    <code class="p1">while <em> (condition);</em></code>
-    <h3>for Loops</h3>
-    <p>The 'for' loop executes the body of code a certain number of times.  It has three parts, an initialiser. a condition and an iterator. 
-    It's syntax is:</p> 
-    <code class = "p1"> for (initialiser; condition; iterator)</em></code>
-    <code class="p2">     embedded-statement  </code>
-    <h3>foreach Loops</h3>
-    <p>The 'foreach' loop executes the body of code for all elements found in a collection of some sort. It's syntax is:</p> 
-    <code class = "p1"> foreach (type identifier in expression)</em></code>
-    <code class="p2">     embedded-statement  </code>
-    <p><strong>(Note that the curly brackets are optional surrounding the embedded-statements in all of these looping structures.)</strong></p> 
+	<div class="top">
+		<a href="index.html"><span>C# Looping</span></a>
+	</div>
 
+	<div class="main">
 
+		<div class="item">
+			<div class="content">
+				<h1>Why Loop?</h1>
+				<div class="body">
+					<p>A loop is a fundamental way to repeat the execution of certain pieces of code in your programme. You wouldn't want to have to write the same piece of code over and over just to collect multiple
+				    bits of information from the user, or to display something that has lots of values.  Instead you write one piece of code and loop through it a certain number of times.</p>
+				    
+				    <h2>What are the choices?</h2>
+				    <p>There are four loop constructs in c#.  They are the 'while', 'do', 'for' and 'foreach' loop constructs:</p>
+				    
+				    <h2>while Loops </h2>
+				    <p>This loop construct continues executing an embedded statement as long as a certain condition holds true. It's syntax is:</p>
+				    <blockquote>while <em> (condition)</em><br>
+				        embedded-statement </blockquote>
+				    <p>The while statement evaluates it's condition before entering the loop body on every iteration.</p> 
+				    
+				    <h2>do...while Loops</h2>
+				    <p>The 'do' loop is similar to the above 'while' loop except that the expression is evaluated after the body of the loop has completed. By implication this means that it will always run at least once. It's syntax is:</p>
+				    <blockquote>do<br>
+				         embedded-statement<br>
+				         while <em> (condition);</em></blockquote>
+				    
+				    <h2>for Loops</h2>
+				    <p>The 'for' loop executes the body of code a certain number of times.  It has three parts, an initialiser. a condition and an iterator. 
+				    It's syntax is:</p> 
+				    <blockquote> for (initialiser; condition; iterator)</em><br>
+				    embedded-statement  </blockquote>
+				    
+				    <h2>foreach Loops</h2>
+				    <p>The 'foreach' loop executes the body of code for all elements found in a collection of some sort. It's syntax is:</p> 
+				    <blockquote> foreach (type identifier in expression)</em><br>
+				      embedded-statement  </blockquote>
+				    <em>(Note that the curly brackets are optional surrounding the embedded-statements in all of these looping structures.)</em> 
+			
+				    <h2>How do I choose?</h2>
+				    <p>Loops allow you to execute a block of statements repeatedly. C# offers several statements to construct loops with, including the while, do, for, and foreach loops. while loops execute a block of statements as long as an expression is true, do loops execute a block of statements at least once and then keep going as long as a condition is true, for loops execute a block of statements a specified amount of times, and foreach loops execute a block of statements for each item in a collection. Normally a block of statements will execute from beginning to end. However, the normal flow of a loop can be changed with the break and continue statements.</p>
 
+				</div>
+			</div>
+
+		<div class="navigation">
+			<h1>Technical Blogs</h1>
+			<ul>
+				<li><a href = "../blogposts/week1_technical.html">Web Site Design</a></li>
+				<li><a href = "../blogposts/week2_technical.html">Margins, Borders and Padding</a></li>
+				<li><a href = "../blogposts/week3_technical.html">Why JavaScript</a></li>
+				<li><a href = "../blogposts/week4_technical.html">C# Looping</a></li>
+			</ul>
+			
+			<h1>Cultural Blogs</h1>
+			<ul>
+				<li><a href = "../blogposts/week1_cultural.html">Shareef's Fireside Chat</a></li>
+				<li><a href = "../blogposts/week3_cultural.html">Thinking and Learning Styles</a></li>
+				<li><a href = "../blogposts/week4_cultural.html">Large IT project failures</a></li>
+			</ul>	
+			<h1>Miscellaneous</h1>
+			<ul>
+				<li><a href = "../unit1_projects/eda1.html">Introduction Exercise</a></li>
+				<li><a href = "../unit1_projects/eda2.html">Baking a Carob Cake</a></li>
+				<li><a href = "../unit1_projects/my_wireframe.html">Delving into Design - Wireframes</a></li>
+			</ul>
+		</div>	
+	</div>
 	
-    <h2>How do I choose?</h2>
-    Loops allow you to execute a block of statements repeatedly. C# offers several statements to construct loops with, including the while, do, for, and foreach loops. while loops execute a block of statements as long as an expression is true, do loops execute a block of statements at least once and then keep going as long as a condition is true, for loops execute a block of statements a specified amount of times, and foreach loops execute a block of statements for each item in a collection. Normally a block of statements will execute from beginning to end. However, the normal flow of a loop can be changed with the break and continue statements.
-    </code>
-  </section>
+	<div class="clearer"><span></span></div>
 
-  <aside> Goto other technical blogs
-     <li><a href="http://dplkjl.github.io/unit1_projects/week1_technical.html" target="_blank">Web site design</a></li>
-     <li><a href="http://dplkjl.github.io/unit1_projects/week2_technical.html" target="_blank">Margins, Borders and Padding</a></li>
-     <li><a href="http://dplkjl.github.io/unit1_projects/week3_technical.html" target="_blank">Why is JavaScript so popular?</a></li>
- 	 </aside>
+	<div class="footer">&copy; 2014 design by Karen Larsen with help from Viktor Persson URL: <a href="http://templates.arcsin.se">http://templates.arcsin.se></a>
+	</div></a>
+	</div>
+
 </div>
-  
-<footer>
-  <code>Designed by Karen Larsen</code>
-</footer>
- 
+
+</body>
+
+</html>
