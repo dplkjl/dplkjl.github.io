@@ -1,111 +1,145 @@
-<!DOCTYPE html>
-<html lang="en">
-<link href="stylesheets/blog.css" rel="stylesheet">
-<meta charset="utf-8"><header>
-<header>
-  <!--<code>&#60;header&#62;</code> -->
-  <h1>Technical Blog</h1>
-</header>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+<html>
 
-<div class="group">
-      <title>W2 Tech Blog</title>  <!-- tab label-->
-  <code class="default"><strong>Blog Entries </strong></code>
-  
-  <section>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<meta name="description" content="description"/>
+<meta name="keywords" content="keywords"/> 
+<meta name="author" content="author"/> 
+<link rel="stylesheet" type="text/css" href="stylesheets/blog.css" media="screen"/>
+<title>Margins, Borders and Padding!</title>
+</head>
 
-    <code>  
-    <h1>Saturday 14 June 2014
-    <br>
-    <strong>Margins, Borders and Padding!</strong></h1>
-    Before delving into this topic, it is useful to mention the <em>'box model' </em>of css.  In this model all HTML elements can be considered as boxes. The CSS box model involves a box that wraps around HTML elements, and it consists of: margins, borders, padding, and the actual content.<br>
-        <br>
-    Diagrammatically it looks like this:<br><img alt="Margins, Border and Padding Diagram" height="350" longdesc="Margins, Border and Padding Diagram" src="../unit1_projects/images/margindiagram1.PNG" width="500" /> <br>
-    In basic terms, padding is the space between the element (object or image) and the border, whereas the margin is the space outside the border.  
-    <br>
-    <strong>Margin</strong> - Clears an area around the border. The margin does not have a background color, it is completely transparent<br>
-    <strong>Border</strong> - A border that goes around the padding and content. The border is inherited from the color property of the box<br>
-    <strong>Padding</strong> - Clears an area around the content. The padding is affected by the background color of the box<br>
-    <strong>Content</strong> - The content of the box, where text and images appear <br><br>
-    Margins and Padding are the two most commonly used properties for spacing out elements on a page.  You need to remember that when calculating the size of an element you must also include any Margin, border and padding settings in your calculation.  In the example below you would need to add a further 60px to the size of the h2 elements:<br>
-    
-    <img alt="h2 size calculation example" height="150" longdesc="h2 size calculation example" src="../blogposts/images/h2.png" width="250" /> <br>
-    <strong>The rule of thumb about when to choose between using margins and padding is:</strong><br>
-    <ul>Use margin to separate the block from things outside it </ul>
-    <ul>Use padding to move the contents away from the edges of the block.</ul>
-    <br>
-    <a name = "margin" > </a>   
-    <h2><strong>Margins</strong></h2>
-    Margins add space around the outer edge of the element. Using the margin property, you can define all four margins to be the same. Or you can set all four separately with the same property: <br><br>
-    margin: top right bottom left;<br><br>
-    Or if you only want to set the margin on one specific side, you can use the margin-* properties (ie. margin-top, margin-right, margin-bottom, margin-left). This property can have from one to four values.   <br><br>
+<body>
 
-    Examples:   <br>
-   
-    margin:10px 5px 15px 20px;   <br>
-    top margin is 10px   <br>
-    right margin is 5px   <br>
-    bottom margin is 15px   <br>
-    left margin is 20px   <br>
-   <br>
-    margin:10px 5px 15px;   <br>
-    top margin is 10px   <br>
-    right and left margins are 5px   <br>
-    bottom margin is 15px   <br>
-   <br>
-    margin:10px 5px;   <br>
-    top and bottom margins are 10px   <br>
-    right and left margins are 5px   <br>
-   <br>
-    margin:10px;   <br>
-    all four margins are 10px   <br>
-    Note: Negative values are allowed.   <br>
-     <br>
-     <a name = "border" > </a>   
-    <h2><strong>Borders</strong></h2>   
-    The CSS border properties allow you to specify the style and color of an element's border.<br>
-   <br>
-    The properties that can be set, are (in order): border-width, border-style, and border-color.   <br>
-   <br>
-    This example from http://www.w3schools.com/css/css_border.asp gives a complete picture of the options available:
-    <br>
-    <img alt="borders example" height="500" longdesc="borders example" src="../unit1_projects/images/border.png" width="700" /> <br>
-    <a name = "padding" > </a>   
-    <h2><Strong>Padding</Strong></h2>   
-    Padding adds space around the inner edge of the element. Using the padding property, you can define all four sides to have the same padding, or you can set all four separately with the same property:<br><br>
-    padding : top right bottom left;<br><br>
-    Of if you only want to set the padding on one specific side, you can use the padding-* properties (ie. padding-left, padding-top, padding-right, padding-bottom).<br>
-    <br>
-    Examples:<br>
+<div class="container">
 
-    padding:10px 5px 15px 20px;<br>
-    top padding is 10px<br>
-    right padding is 5px<br>
-    bottom padding is 15px<br>
-    left padding is 20px<br><br>
+	<div class="top">
+		<a href="index.html"><span>Margins, Borders and Padding!</span></a>
+	</div>
 
-    padding:10px 5px 15px;<br>
-    top padding is 10px<br>
-    right and left padding are 5px<br>
-    bottom padding is 15px<br><br>
+	<div class="main">
 
-    padding:10px 5px;<br>
-    top and bottom padding are 10px<br>
-    right and left padding are 5px<br><br>
+		<div class="item">
+			<div class="content">
+				<h1>Introduction</h1>
+				<div class="body">
+					<p>Before delving into this topic, it is useful to mention the <em>'box model' </em>of css.  In this model all HTML elements can be considered as boxes. The CSS box model involves a box that wraps around HTML elements, and it consists of: margins, borders, padding, and the actual content.<br>
+				        <br>
+				    Diagrammatically it looks like this:<br><img alt="Margins, Border and Padding Diagram" height="350" longdesc="Margins, Border and Padding Diagram" src="../unit1_projects/images/margindiagram1.PNG" width="500" /> <br>
+				    In basic terms, padding is the space between the element (object or image) and the border, whereas the margin is the space outside the border.  </p>
+				    <br>
+				    <h2>Margin</h2> <p>- Clears an area around the border. The margin does not have a background color, it is completely transparent</p><br>
+				    <h2>Border</h2> <p>- A border that goes around the padding and content. The border is inherited from the color property of the box</p><br>
+				    <h2>Padding</h2> <p>- Clears an area around the content. The padding is affected by the background color of the box</p><br>
+				    <h2>Content</h2><p> - The content of the box, where text and images appear </p><br>
+				    <p>Margins and Padding are the two most commonly used properties for spacing out elements on a page.  You need to remember that when calculating the size of an element you must also include any Margin, border and padding settings in your calculation.  In the example below you would need to add a further 60px to the size of the h2 elements:<br></p>
+				    
+				    <img alt="h2 size calculation example" height="150" longdesc="h2 size calculation example" src="../blogposts/images/h2.png" width="250" /> <br>
+				    <p><strong>The rule of thumb about when to choose between using margins and padding is:</strong><br></p>
+				    <ul>Use margin to separate the block from things outside it </ul>
+				    <ul>Use padding to move the contents away from the edges of the block.</ul>
+				    <br>
+				    <a name = "margin" > </a>   
+				    <h1>Margins</h1>
+				    <p>Margins add space around the outer edge of the element. Using the margin property, you can define all four margins to be the same. Or you can set all four separately with the same property: <br><br>
+				    margin: top right bottom left;<br><br>
+				    Or if you only want to set the margin on one specific side, you can use the margin-* properties (ie. margin-top, margin-right, margin-bottom, margin-left). This property can have from one to four values.</p>   <br><br>
 
-    padding:10px;<br>
-    all four paddings are 10px<br>
-    Note: Negative values are not allowed.<br>
-    </code>
-  </section>
+				    </p>Examples:   <br>
+				   
+				    <blockquote>
+				    margin:10px 5px 15px 20px;   <br>
+				    top margin is 10px   <br>
+				    right margin is 5px   <br>
+				    bottom margin is 15px   <br>
+				    left margin is 20px   <br>
+				   <br>
+				    margin:10px 5px 15px;   <br>
+				    top margin is 10px   <br>
+				    right and left margins are 5px   <br>
+				    bottom margin is 15px   <br>
+				   <br>
+				    margin:10px 5px;   <br>
+				    top and bottom margins are 10px   <br>
+				    right and left margins are 5px   <br>
+				   <br>
+				    margin:10px;   <br>
+				    all four margins are 10px   <br>
+				    Note: Negative values are allowed.</blockquote>   <br>
+				     <br>
+				     <a name = "border" > </a>   
+				    <h1>Borders</h1>   
+				    <p>The CSS border properties allow you to specify the style and color of an element's border.<br>
+				    <br>
+				    The properties that can be set, are (in order): border-width, border-style, and border-color.   <br>
+				    <br>
+				    This example from http://www.w3schools.com/css/css_border.asp gives a complete picture of the options available:</p>
+				    <br>
+				    <img alt="borders example" height="500" longdesc="borders example" src="../blogposts/images/border.png" width="700" /> <br>
+				    <a name = "padding" > </a>   
+				    <h1>Padding</h1>   
+				    <p>Padding adds space around the inner edge of the element. Using the padding property, you can define all four sides to have the same padding, or you can set all four separately with the same property:<br><br>
+				    padding : top right bottom left;<br><br>
+				    Of if you only want to set the padding on one specific side, you can use the padding-* properties (ie. padding-left, padding-top, padding-right, padding-bottom).</p><br>
+				    <br>
+				    <blockquote>
+				    Examples:<br>
 
-  <aside> Goto other technical blogs
-      <li><a href="http://dplkjl.github.io/unit1_projects/week2_technical.html" target="_blank">CSS - Margins, Borders and Padding</a></li>
-      <li><a href="http://dplkjl.github.io/unit1_projects/week3_technical.html" target="_blank">Why JavaScript</a></li>
-      <li><a href="http://dplkjl.github.io/unit1_projects/week4_technical.html" target="_blank">c# Looping!</a></li>
-    </aside>
+				     padding:10px 5px 15px 20px;<br>
+				    top padding is 10px<br>
+				    right padding is 5px<br>
+				    bottom padding is 15px<br>
+				    left padding is 20px<br><br>
+
+				    padding:10px 5px 15px;<br>
+				    top padding is 10px<br>
+				    right and left padding are 5px<br>
+				    bottom padding is 15px<br><br>
+
+				    padding:10px 5px;<br>
+				    top and bottom padding are 10px<br>
+				    right and left padding are 5px<br><br>
+
+				    padding:10px;<br>
+				    all four paddings are 10px<br>
+				    Note: Negative values are not allowed.<br></blockquote>
+
+				</div>
+			</div>
+
+		<div class="navigation">
+			<h1>Technical Blogs</h1>
+			<ul>
+				<li><a href = "../blogposts/week1_technical.html">Web Site Design</a></li>
+				<li><a href = "../blogposts/week2_technical.html">Margins, Borders and Padding</a></li>
+				<li><a href = "../blogposts/week3_technical.html">Why JavaScript</a></li>
+				<li><a href = "../blogposts/week4_technical.html">C# Looping</a></li>
+			</ul>
+			
+			<h1>Cultural Blogs</h1>
+			<ul>
+				<li><a href = "../blogposts/week1_cultural.html">Shareef's Fireside Chat</a></li>
+				<li><a href = "../blogposts/week3_cultural.html">Thinking and Learning Styles</a></li>
+				<li><a href = "../blogposts/week4_cultural.html">Large IT project failures</a></li>
+			</ul>	
+			<h1>Miscellaneous</h1>
+			<ul>
+				<li><a href = "../unit1_projects/eda1.html">Introduction Exercise</a></li>
+				<li><a href = "../unit1_projects/eda2.html">Baking a Carob Cake</a></li>
+				<li><a href = "../unit1_projects/my_wireframe.html">Delving into Design - Wireframes</a></li>
+			</ul>
+		</div>	
+	</div>
+	
+	<div class="clearer"><span></span></div>
+
+	<div class="footer">&copy; 2014 design by Karen Larsen with help from Viktor Persson URL: <a href="http://templates.arcsin.se">http://templates.arcsin.se></a>
+	</div></a>
+	</div>
+
 </div>
-  
-<footer>
-  <code>Designed by Karen Larsen</code>
-</footer>
- 
+
+</body>
+
+</html>
