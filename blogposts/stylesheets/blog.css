@@ -1,91 +1,143 @@
-code {
-  background: #009b9b;
-  border-radius: 6px;
-  color: #fff;
-  display: block;
-  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
-  padding: 24px 15px;
-  text-align: left;
+
+/* standard elements */
+* {
+	margin: 0;
+	padding: 0;
 }
-.default {
-  background: none;
-  color: #666;
-  text-align: Left;
-  font: 24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
-  font-weight: 300;
+a {color: #682;}
+a:hover {color: #9A6;}
+body {
+	background: #5F8000 url(../unit1_projects/images/bg.gif) repeat-y center top;
+	color: #333
+	/*background: white;*/
+	color: #333;
+	font: normal 62.5% "Lucida Sans Unicode",sans-serif;
 }
-.group:before,
-.group:after {
-  content: "";
-  display: table;
+input {
+	color: #555;
+	font: normal 1.1em "Lucida Sans Unicode",sans-serif;
 }
-.group:after {
-  clear: both;
+p,cite,code,ul {
+	font-size: 1.5em;
+	padding-bottom: 1.2em;
 }
-.group {
-  background: #eaeaed;
-  border-radius: 6px;
-  clear: both;
-  *zoom: 1;
+blockquote {
+	background: #FFF;
+	border-bottom: 1px solid #EEE;
+	border-top: 1px solid #EEE;
+	color: #333;
+	display: block;
+	font-size: 1.2em;
+	margin-bottom: 1.2em;
+	padding: 6px 12px;
 }
-.p1{
-    font: 14px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
-    text-align: left;
-    padding: 0px 0px 0px 30px;
-    color:black;
- }
-.p2{
-    font: 14px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
-    text-align: left;
-    padding: 0px 0px 0px 42px;
-    color:black;
- 
- }
- .group,
-header,
-section,
-aside,
-footer {
-  margin: 0 1.5% 24px 1.5%;
+blockquote p {padding: 3px 0;}
+ul {margin-left: 1.2em;}
+li {list-style-image: url(../unit1_projects/images/li.gif);}
+h1 {font-size: 1.4em;}
+
+/* misc */
+.clearer {clear: both;}
+
+/* structure */
+.container {
+	margin: 0 auto;
+	width: 932px;
 }
-section {
-  float: left;
-  width: 63%;
+
+/* top */
+.top {
+	background: #567300;
+	font: normal 2.4em Verdana,sans-serif;
+	height: 60px;
+	margin: 0 auto;
+	width: 932px;
 }
-aside {
-  float: right;
-  width: 30%;
+.top a {
+	color: #FFF;
+	display: block;
+	line-height: 60px;
+	text-decoration: none;
+	width: 100%;
 }
-footer {
-  margin-bottom: 0;
+.top span {padding-left: 24px;}
+.top a:hover {
+	background: #688B00;
+	color: #FFF;
 }
-h1{
-  background: #009b9b;
-  border-radius: 6px;
-  color: #fff;
-  display: block;
-  font-family: 'Georgia', sans-serif;
-  font-weight: 300;
-  text-align: left;
+
+/* header */
+.header {
+
+	height: 180px;
+	margin: 0 auto;
+	width: 900px;
 }
-h2{
-  background: #009b9b;
-  border-radius: 6px;
-  color: #fff;
-  display: block;
-  font-family: 'Georgia', sans-serif;
-  font-weight: 300;
-  text-align: left;
+
+/* item */
+.item {clear: both;}
+
+.item .date div {padding-top: 4px;}
+.item .date span {font: normal 1.6em serif;}
+.item .content {
+	float: left;
+	width: 700px;
 }
-h3, h4 {
-  background: #009b9b;
-  border-radius: 6px;
-  color: #fff;
-  display: block;
-  font-family: 'Georgia', sans-serif;
-  font-weight: 300;
-  text-align: left;
+.item h1 {
+	background: #81AC00 ;
+	color: #FFF;
+	line-height: 40px;
+	padding-left: 24px;
+	width: 100%;
 }
-p{
-  padding:0px 0px 0px 6px;
+.item .body {padding: 12px 18px;
+	}
+
+/* main */
+.main {float: left;
+width:932px;
+background:white;}
+
+/* navigation */
+.navigation {
+	float: right;
+	margin-left: 1px;
+	width: 210px;
 }
+.navigation h1 {
+	background: #81AC00;
+	color: #FFF;
+	font-size: 1.3em;
+	line-height: 40px;
+	padding-left: 12px;
+	width: 198px; 
+}
+.navigation ul {margin: 0; padding: 0;}
+.navigation li {
+	border-bottom: 1px solid #D5E8AD;
+	list-style: none; 
+}
+.navigation li a {
+	background: #E8F6BF url(../../unit1_projects/images/bgnavigation.gif) repeat-x;	
+	color: #553;
+	display: block;
+	padding: 8px 4px 8px 12px;
+	text-decoration: none;
+}
+.navigation li a:hover {
+	background: #F0FFC6;
+	color: #553;
+}
+
+/* footer */
+.footer {
+	background: url(../../unit1_projects/images/bgfooter.gif) repeat-x;
+	color: #FFF;
+	font-size: 1.1em;
+	line-height: 40px;
+	margin: 0 auto;
+	text-align: center;
+	width: 932px;
+}
+.footer a {color: #FFF;}
+.footer a:hover {color: #FAFCB0;}
