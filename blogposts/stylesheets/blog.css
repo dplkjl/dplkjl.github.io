@@ -91,12 +91,13 @@ h1 {font-size: 1.4em;}
 	width: 100%;
 }
 .item .body {padding: 12px 18px;
-	}
+}
 
 /* main */
 .main {float: left;
 width:932px;
-background:white;}
+background:white;
+}
 
 /* navigation */
 .navigation {
