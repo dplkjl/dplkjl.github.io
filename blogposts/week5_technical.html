@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<meta name="description" content="description"/>
+<meta name="keywords" content="keywords"/> 
+<meta name="author" content="author"/> 
+<link rel="stylesheet" type="text/css" href="stylesheets/blog.css" media="screen"/>
+<title>C# Methods and things</title>
+</head>
+
+<body>
+
+<div class="container">
+
+	<div class="top">
+		<a href="index.html"><span>Using C# OOP structures</span></a>
+	</div>
+
+	<div class="main">
+
+		<div class="item">
+			<div class="content">
+				<h1></h1>
+				<div class="body">
+					<h2>Intro</h2>
+					<p>This blog is going to look at some of the main structures and Object Oriented Programming techniques used in C#.  I am 
+					really just beginning to really come to terms with these things myself so let's see if I get it right and if I can give you
+					some pointers and clarify things for myself in the process!  We'll start with some definitions and end with an example from my
+					work experience.</p>
+				    
+				    <h2>What is a class?</h2>
+				    <p>According to my reference guide, a class combines data, functions and nested types into a new type, which is a key building
+				    block of C# applications.  In simple terms, classes are pretty much the place you write your computer code.</p>
+					<h2>Instance and Static Members?</h2>
+				    <p>Data and Functions (including: fields, constants, events, methods, properties, constructors, destructors etc) can be either 
+				    instance or static.  By default these things will be instance members, which basically means they relate to the particular instance
+				    in which they are being used.  On the other hand a 'static' member is associated with the overaching type itself.</p>
+				    <h2>What is a method?</h2>
+				    <p>All C# code executes in a method or in a special form of a method.  It is basically a block of code.  This block of code gets
+				    'called' and 'executes' which just means it makes stuff happen in your programme.</p>
+				    <h2>How does this work?</h2>
+				    <p>I watched a good youtube video (https://www.youtube.com/watch?v=OBsGRqXzOhk) in which a guy called Patrick used a table analogy to
+				    describe the relationship between a static and an instance method. He explained that if the data you were working with was able to be
+				    put into a spreadsheet of rows and columns, that the columns would be the static method and the rows would be the instance methods. </p>
+				    <p>This analogy works for me because a lot of what I do involves storing information in database tables.</p>
+					<img alt="example of a table" height="100" longdesc="example of a table containing client data" src="../blogposts/images/table.png" width="700" /> <br><br>
+					<p>So in the 'clients' table above, the column headers 'Client id', 'Last name', 'First names', 'Gender' etc would form part of the static
+					 method and the actual client data would be the instance of that static object.  Each individual person is one instance of the the client object
+					.</p>
+					<p>In practical coding terms that means you can not use the 'new' keyword with a static member.  You use the 'new' keyword to create an instance of that static member.  The static member is shared whereas the instance gets created every time it is used.</p>
+					<p> Static members are a good way of organising your code so that you don't repeat yourself heaps, they can be used as utilities.  </p>
+
+				</div>
+			</div>
+
+		<div class="navigation">
+			<ul>
+			<li><a href = "../index.html">Home</a></h1>
+			<ul>
+			<h1>Technical Blogs</h1>
+			<ul>
+				<li><a href = "../blogposts/week1_technical.html">Web Site Design</a></li>
+				<li><a href = "../blogposts/week2_technical.html">Margins, Borders and Padding</a></li>
+				<li><a href = "../blogposts/week3_technical.html">Why JavaScript</a></li>
+				<li><a href = "../blogposts/week4_technical.html">C# Looping</a></li>
+				<li><a href = "../blogposts/week5_technical.html">C# Methods and things</a></li>			
+			</ul>
+			
+			<h1>Cultural Blogs</h1>
+			<ul>
+				<li><a href = "../blogposts/week1_cultural.html">Shareef's Fireside Chat</a></li>
+				<li><a href = "../blogposts/week3_cultural.html">Thinking and Learning Styles</a></li>
+				<li><a href = "../blogposts/week4_cultural.html">Large IT project failures</a></li>
+				<li><a href = "../blogposts/week5_cultural.html">Pairing and Giving Feedback</a></li>
+			</ul>	
+			<h1>Miscellaneous</h1>
+			<ul>
+				<li><a href = "../unit1_projects/eda1.html">Introduction Exercise</a></li>
+				<li><a href = "../unit1_projects/eda2.html">Baking a Carob Cake</a></li>
+				<li><a href = "../unit1_projects/my_wireframe.html">Delving into Design - Wireframes</a></li>
+			</ul>
+		</div>	
+	</div>
+	
+	<div class="clearer"><span></span></div>
+
+	<div class="footer">&copy; 2014 design by Karen Larsen with help from Viktor Persson URL: <a href="http://templates.arcsin.se">http://templates.arcsin.se></a>
+	</div></a>
+	</div>
+
+</div>
+
+</body>
+
+</html>
