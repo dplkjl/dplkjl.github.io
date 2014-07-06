@@ -51,6 +51,9 @@
 					.</p>
 					<p>In practical coding terms that means you can not use the 'new' keyword with a static member.  You use the 'new' keyword to create an instance of that static member.  The static member is shared whereas the instance gets created every time it is used.</p>
 					<p> Static members are a good way of organising your code so that you don't repeat yourself heaps, they can be used as utilities.  </p>
+					<p> If you use a static variable, it will share that variable with all the instances created from it.  If you use a static constructor, 
+					you can effectively 'pass on' or populate the new instance with the data from the static constructor.  In my example if the majority of
+					clients were women, I could use a static constructor to pass on that data to each client instance created.  Magic!</p>
 
 				</div>
 			</div>
