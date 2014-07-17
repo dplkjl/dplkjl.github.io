@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<meta name="description" content="description"/>
+<meta name="keywords" content="keywords"/> 
+<meta name="author" content="author"/> 
+<link rel="stylesheet" type="text/css" href="stylesheets/blog.css" media="screen"/>
+<title>C# Variable Scope</title>
+</head>
+
+<body>
+
+<div class="container">
+
+	<div class="top">
+		<a href="index.html"><span>C# Variable Scope</span></a>
+	</div>
+
+	<div class="main">
+
+		<div class="item">
+			<div class="content">
+				<h1></h1>
+				<div class="body">
+					<h2>Intro</h2>
+					<p> In this blog I am going to deal with 'variable scope'.  The official MSDN definition is:</p>
+					<blockquote>The scope of a variable, sometimes referred to as accessibility of a variable, refers to where the variable can be read from and/or written to, and the variable's lifetime, or how long it stays in memory. The scope of a procedure or method refers to where a procedure can be called from or under what context you are allowed to call a method.</blockquote> <br> <br>
+					<p>The MSDN site also gives the really useful table below, which outlines concisely the general scoping rules for a variable.</p>
+					<img alt="variable scope table" height="300" longdesc="general rules for the scope of a variable in c#" src="../blogposts/images/variablescopetable.png" width="700" /> <br><br>
+				    
+				    <h2>What does that mean?</h2>
+				    <p> Objects created within methods are called local variables.  They are local to the method, rather than belonging to object like member variables do.  When the method ends the variable is destroyed and therefore can no longer be accessed. They are effectively temporary places to hold values.  </p>
+				    <h2>On a technical level</h2>
+				    <p>At a technical level it is about putting things into memory or on 'the stack'. These variables are said to have 'local scope'.</p>
+				    <p>The alternative to variables that get put on the 'stack' are 'reference types' that get created on an undifferentiated block of memory known as 'the heap'.  These are 'reference types' as opposed to value types.  When you declare an instance of a reference type you are actually declaring a reference which is a variable that refers to another object.  It all seems a bit complicated when described like that, so let's look at an example to try to clarify it. </p>
+				    <p>When we use the following code:</p>
+				    <blockquote> Person karen = new Client();</blockquote>
+				    <p>the 'new' operator creates a Client object on the heap and returns a reference to it. That reference is assigned to karen.  So karen is a reference object that refers to a Client object on the heap.  For all practical purposes though, you can treat karen as if it were the Client object itself.</p>
+				    <h2>When to use the various scopes/h2>
+				    <p>The majority of variables used in your programmes will be instance variables used at the procedure level.  It is quite unusual to use variables at the 'block' level, but it is allowed within the language. Most variables relate to a particular instance of your object and so that will be the scope of that variable. </p>
+				    <p>Module or Class level variables are used less frequently, but can be a good alternative to the cumbersome need to always pass variables from one routine to another using a parameter. Another common use of static member variables is to keep track of the number of instance objects that currently exist for your class.  This count does not belong to any particular instance of the object so needs to be stored as a static variable.  </p>
+				    <p>Project level variables are effectively 'global' variables. If you wish to have a 'global' variable, one that can be seen by any procedure anywhere in your program, you need to declare this type of variable as a Public scope in a module somewhere in your program.  These variables should be used sparingly as they are very hard to keep track of. Multiple routines may attempt to use the variable at the same time and this can cause unexpected problems and difficulties in debugging.</p>
+
+				     
+
+				</div>
+			</div>
+
+		<div class="navigation">
+			<ul>
+			<li><a href = "../index.html">Home</a></h1>
+			<ul>
+			<h1>Technical Blogs</h1>
+			<ul>
+				<li><a href = "../blogposts/week1_technical.html">Web Site Design</a></li>
+				<li><a href = "../blogposts/week2_technical.html">Margins, Borders and Padding</a></li>
+				<li><a href = "../blogposts/week3_technical.html">Why JavaScript</a></li>
+				<li><a href = "../blogposts/week4_technical.html">C# Looping</a></li>
+				<li><a href = "../blogposts/week5_technical.html">C# Methods and things</a></li>			
+				<li><a href = "../blogposts/week6_technical.html">C# Variable Scope</a></li>		
+							</ul>
+			
+			<h1>Cultural Blogs</h1>
+			<ul>
+				<li><a href = "../blogposts/week1_cultural.html">Shareef's Fireside Chat</a></li>
+				<li><a href = "../blogposts/week3_cultural.html">Thinking and Learning Styles</a></li>
+				<li><a href = "../blogposts/week4_cultural.html">Large IT project failures</a></li>
+				<li><a href = "../blogposts/week5_cultural.html">Pairing and Giving Feedback</a></li>
+				<li><a href = "../blogposts/week6_cultural.html">Stereotype Threat</a></li>
+				</ul>	
+			<h1>Miscellaneous</h1>
+			<ul>
+				<li><a href = "../unit1_projects/eda1.html">Introduction Exercise</a></li>
+				<li><a href = "../unit1_projects/eda2.html">Baking a Carob Cake</a></li>
+				<li><a href = "../unit1_projects/my_wireframe.html">Delving into Design - Wireframes</a></li>
+			</ul>
+		</div>	
+	</div>
+	
+	<div class="clearer"><span></span></div>
+
+	<div class="footer">&copy; 2014 design by Karen Larsen with help from Viktor Persson URL: <a href="http://templates.arcsin.se">http://templates.arcsin.se></a>
+	</div></a>
+	</div>
+
+</div>
+
+</body>
+
+</html>
